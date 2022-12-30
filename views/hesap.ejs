@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <%- include('src/head') %>
+    </head>
+    <body style="overflow: hidden;">
+        <%- include('src/load') %>
+        <div class="yanbar">
+            <ul>
+                <% users.forEach(user1 => { %>
+                    <li><img src="<%=user1.imgUrl%>" alt=""><span style="text-transform: capitalize;"><%=user1.ad%></span></li>
+                <% }) %>
+            </ul>
+        </div>
+        <script src="https://kit.fontawesome.com/814bf03a7c.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
